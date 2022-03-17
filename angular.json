@@ -31,9 +31,24 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/vendor/animate.css/animate.min.css",
+              "src/assets/vendor/bootstrap-icons/bootstrap-icons.css",
+              "src/assets/vendor/boxicons/css/boxicons.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/vendor/remixicon/remixicon.css",
+              "src/assets/vendor/swiper/swiper-bundle.min.css"
+             
+
             ],
-            "scripts": []
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.js",
+                        "node_modules/jquery/dist/jquery.min.js",
+                        "src/myscript.js",
+                        "node_modules/@srexi/purecounterjs/dist/purecounter.js",
+                        "src/assets/vendor/bootstrap/js/bootstrap.bundle.min.js",
+                        "src/assets/vendor/swiper/swiper-bundle.min.js",
+                        "src/assets/vendor/php-email-form/validate.js"
+            ]
           },
           "configurations": {
             "production": {
