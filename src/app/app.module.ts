@@ -8,6 +8,13 @@ import { HomeComponent } from './home/home.component';
 import { NavBarComponent } from './header/nav-bar/nav-bar.component';
 import { FooterComponent } from './footers/footer/footer.component';
 import { AboutComponent } from './about/about.component';
+import { TeachersComponent } from './teachers/teachers.component';
+import { PricingComponent } from './pricing/pricing.component';
+import { ContactComponent } from './contact/contact.component';
+import { CoursesComponent } from './courses/courses.component';
+import {HttpClientModule} from '@angular/common/http';
+import { SubjectListComponent } from './subject-list/subject-list.component';
+import { ChapterListComponent } from './chapter-list/chapter-list.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +22,20 @@ import { AboutComponent } from './about/about.component';
     HomeComponent,
     NavBarComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    TeachersComponent,
+    PricingComponent,
+    ContactComponent,
+    CoursesComponent,
+    SubjectListComponent,
+    ChapterListComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

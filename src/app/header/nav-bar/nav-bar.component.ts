@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CourseServiceService } from 'src/app/Services/course-service.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements OnInit {
+  CourseList: any;
 
-  constructor() { }
+  constructor(private courseService: CourseServiceService) { }
 
   ngOnInit(): void {
+    this.courseService.getAllCourse().subscribe(res=>{
+      this.CourseList = res.data
+    })
   }
 
 }
