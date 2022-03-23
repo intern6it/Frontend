@@ -21,9 +21,9 @@ export class CoursesComponent implements OnInit {
   }
 
 
-  CourseSelected(course:number){
+  CourseSelected(course:any){
     this.courseIdSelect.emit(course)
-    // this.courseSelect=true;
-    // this.Course=course;
+     this.courseSelect=true;
+     this.Course=course;
   }
 }
