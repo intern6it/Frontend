@@ -7,6 +7,7 @@
     <!-- Uncomment below if you prefer to use an image logo -->
     <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
+<<<<<<< HEAD
 
     
     <nav id="navbar" class="navbar order-last order-lg-0">
@@ -31,6 +32,63 @@
               </ul>
               
             </li>
+=======
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+          <li><a class="nav-link" routerLink="/about" routerLinkActive="active">About</a></li>
+          <li class="dropdown"  routerLink="/courses" routerLinkActive="active"><a><span>Courses </span><i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><b >&nbsp;&nbsp;&nbsp;Courses</b></li>
+              <li class="dropdown" ><a *ngFor="let item of CourseList">{{item.courseName}}</a>
+              <ul>
+                <li><b >&nbsp;&nbsp;&nbsp;Subjects</b></li>
+                  <li><a href="#">Account</a></li>
+                  <li><a href="#">Stat</a></li>
+                  <li><a href="#">Economices</a></li>
+                  <li><a href="#">OC</a></li>
+                  <li><a href="#">SP</a></li>
+                  <li><a href="#">English</a></li>
+              </ul>
+              </li>
+              <!-- <li class="dropdown"><a ><span>11 Commerce</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><b >&nbsp;&nbsp;&nbsp;Subjects</b></li>
+                  <li><a href="#">Account</a></li>
+                  <li><a href="#">Stat</a></li>
+                  <li><a href="#">Economices</a></li>
+                  <li><a href="#">OC</a></li>
+                  <li><a href="#">SP</a></li>
+                  <li><a href="#">English</a></li>
+                </ul>
+              </li>
+              
+              <li class="dropdown"><a ><span>12 Commerce</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><b >&nbsp;&nbsp;Subjects</b></li>
+                  <li><a href="#">Account</a></li>
+                  <li><a href="#">Stat</a></li>
+                  <li><a href="#">Economices</a></li>
+                  <li><a href="#">OC</a></li>
+                  <li><a href="#">SP</a></li>
+                  <li><a href="#">English</a></li>
+                </ul>
+              </li> -->
+              
+            </ul>
+          </li>
+
+          <li><a class="nav-link" routerLink="/teacher" routerLinkActive="active">Trainers</a></li>
+
+          <li><a class="nav-link" routerLink="/pricing" routerLinkActive="active">Pricing</a></li>
+         
+          <li><a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a routerLink="/courses"  routerLinkActive="active" class="get-started-btn">Get Started</a>
+>>>>>>> 24c72c64388c56fe9f67aa0225e24b57726e7179
 
             
 

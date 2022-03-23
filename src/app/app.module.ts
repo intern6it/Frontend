@@ -8,7 +8,17 @@ import { HomeComponent } from './home/home.component';
 import { NavBarComponent } from './header/nav-bar/nav-bar.component';
 import { FooterComponent } from './footers/footer/footer.component';
 import { AboutComponent } from './about/about.component';
+<<<<<<< HEAD
 import { SubjectComponent } from './subject/subject.component';
+=======
+import { TeachersComponent } from './teachers/teachers.component';
+import { PricingComponent } from './pricing/pricing.component';
+import { ContactComponent } from './contact/contact.component';
+import { CoursesComponent } from './courses/courses.component';
+import {HttpClientModule} from '@angular/common/http';
+import { SubjectListComponent } from './subject-list/subject-list.component';
+import { ChapterListComponent } from './chapter-list/chapter-list.component';
+>>>>>>> 24c72c64388c56fe9f67aa0225e24b57726e7179
 
 @NgModule({
   declarations: [
@@ -17,12 +27,23 @@ import { SubjectComponent } from './subject/subject.component';
     NavBarComponent,
     FooterComponent,
     AboutComponent,
+<<<<<<< HEAD
     SubjectComponent
+=======
+    TeachersComponent,
+    PricingComponent,
+    ContactComponent,
+    CoursesComponent,
+    SubjectListComponent,
+    ChapterListComponent
+    
+>>>>>>> 24c72c64388c56fe9f67aa0225e24b57726e7179
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
